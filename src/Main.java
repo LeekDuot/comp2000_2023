@@ -11,8 +11,6 @@ public class Main extends JFrame {
         Main window = new Main();
     }
     
-    
-    
     class DrawPanel extends JPanel {
         private Grid grid;
 
@@ -22,7 +20,6 @@ public class Main extends JFrame {
         public DrawPanel(Grid grid) {
             this.grid = grid;
             setPreferredSize(new Dimension(720, 720));
-            
             
             addMouseMotionListener(new MouseMotionAdapter() {
                 @Override
