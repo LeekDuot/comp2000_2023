@@ -8,7 +8,8 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Consumer;
 
-public class Grid {
+
+public class Grid implements Iterable<Cell>{
   Cell[][] cells = new Cell[20][20];
   
   public Grid() {
@@ -53,6 +54,7 @@ public class Grid {
     }
     return Optional.empty();
   }
+
 
   /**
    * Takes a cell consumer (i.e. a function that has a single `Cell` argument and
